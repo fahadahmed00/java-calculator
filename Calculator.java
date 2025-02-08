@@ -6,7 +6,7 @@ public class Calculator {
         System.out.println("Enter first number:");
         double num1 = scanner.nextDouble();
 
-        System.out.println("Enter an operator (+, -, *, /):");
+        System.out.println("Enter  operators (+, -, *, /):");
         char operator = scanner.next().charAt(0);
 
         System.out.println("Enter second number:");
@@ -27,7 +27,7 @@ public class Calculator {
                 if (num2 != 0) {
                     result = num1 / num2;
                 } else {
-                    System.out.println("Error: Division by zero!");
+                    System.out.println("Error: division by zero!");
                     return;
                 }
                 break;
@@ -35,7 +35,6 @@ public class Calculator {
                 System.out.println("Invalid operator!");
                 return;
         }
-
         System.out.println("Result: " + result);
     }
 }
